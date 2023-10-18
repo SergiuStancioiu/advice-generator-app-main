@@ -23,12 +23,13 @@ body {
 }
 
 .quote-container {
-  max-width: 420px;
+  max-width: 450px;
 }
 
 .quote-container .quote {
   font-size: 26px;
   color: white;
+  font-weight: 800;
 }
 
 .quote-container .advice-number {
@@ -36,7 +37,8 @@ body {
   color: var(--neon-green);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  font-size: 14px;
 }
 
 .wrapper {
@@ -49,24 +51,6 @@ body {
   padding: 40px 20px 80px;
   border-radius: 10px;
   gap: 30px;
-}
-
-@media (min-width: 576px) {
-  .wrapper {
-    padding: 40px 40px 80px;
-  }
-
-  .wrapper .pause-wrap .image {
-    height: 22px;
-  }
-
-  .pause-wrap .desktop-divider {
-    display: block;
-  }
-
-  .pause-wrap .mobile-divider {
-    display: none;
-  }
 }
 
 .pause-wrap {
@@ -101,4 +85,28 @@ body {
   background-size: contain;
   width: 30px;
   height: 30px;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    padding: 40px 40px 80px;
+  }
+
+  .wrapper .pause-wrap .image {
+    height: 22px;
+  }
+
+  .pause-wrap .desktop-divider {
+    display: block;
+  }
+
+  .pause-wrap .mobile-divider {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote-container .quote {
+    font-size: 28px;
+  }
 }
