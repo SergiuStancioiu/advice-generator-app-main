@@ -19,5 +19,5 @@ function randomAdvice(data) {
   const quote = document.querySelector(".quote");
 
   adviceNumber.textContent = "Advice #" + data.slip.id;
-  quote.textContent = data.slip.advice;
+  quote.textContent = `"${data.slip.advice}"`;
 }
